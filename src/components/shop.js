@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import ShopField from './shopField';
 
 class Shop extends Component {
-    constructor(prop) {
-        super(prop)
-    }
     render() {
         return (
             <body>
