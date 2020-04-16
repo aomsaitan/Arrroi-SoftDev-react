@@ -9,7 +9,10 @@ function GetImage(HocComponent) {
         constructor(props) {
             super(props);
             const { nameImg } = this.props;
-            this.getImageFood(nameImg)
+            if( nameImg ){
+                this.getImageFood(nameImg)
+            }
+            
         }
         getImageFood(image){
             storageRef.child(`Food/${image}.jpg`).getDownloadURL().then(function (url) {
