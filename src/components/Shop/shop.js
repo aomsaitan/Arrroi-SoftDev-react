@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import './Shop.css';
 import ShopField from './shopField';
-
+import GetImage from '../GetImage';
 class Shop extends Component {
     render() {
         return (
             <body>
-                <h1 class="textS"> ร้านแนะนำ  </h1>
+                <div  id={this.props.nameCover+'-cover'}>
+                    <h1 class="textS"> ร้านแนะนำ  </h1>
+                </div>
                 <ShopField
                     nameShop = "ออมสินขายเนื้อ"
                     nameFood="ร้านขายเนื้อ"
@@ -43,7 +45,7 @@ class Shop extends Component {
     }
 
 }
-export default Shop
+export default GetImage(Shop)
 
 
 
