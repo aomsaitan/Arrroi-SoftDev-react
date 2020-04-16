@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import GetImage from './GetImage';
+import GetImage from '../GetImage';
 class ShopField extends Component {
     render() {
         return (
             <div class="shop" >
                 <a>
                     <div class="box textS"> {this.props.nameShop}</div>
-                    <div class="cover"><img id={this.props.nameImg} alt={this.props.nameImg} /></div>
+                    <div class="cover"><img id={this.props.nameFood} alt={this.props.nameFood} /></div>
                 </a>
                 <div class="des textS">
                     <p>{this.props.des}</p>

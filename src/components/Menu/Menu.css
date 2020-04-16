@@ -1,0 +1,59 @@
+.menu {
+    font-size: 2.5vw;
+}
+
+.menu img {
+    width: 4%;
+    float: left;
+}
+
+.desOutbox {
+    margin-left: 10%;
+}
+
+.desOutbox p {
+    margin-left: 7%;
+}
+
+.desInbox {
+    background-color: #814A2C;
+    display: flex;
+    border-radius: 20px;
+    width: 80%;
+    margin: 2% 10% 2% 10%;
+    color: aliceblue;
+}
+
+.desInboxL {
+    padding: 1% 0% 1% 5%;
+    width: 70%;
+}
+
+.desInboxR {
+    padding: 1% 0% 1% 0%;
+    width: 30%;
+}
+
+.HowTo {
+    width: 80%;
+    background-color: #4A362B;
+    border-radius: 20px;
+    margin: 2% 10% 2% 10%;
+    padding-top: 2%;
+}
+
+.HowTo p {
+    padding: 1% 2% 1% 2%;
+    color: aliceblue;
+}
+
+.Step {
+    background-color: #EBC27C;
+    width: 10%;
+    padding: 0.5% 1% 0.5% 3.5%;
+    border-radius: 5px;
+    box-shadow: -5px 0px 0px #EBC27C;
+}
+body{
+    background-color: red;
+}

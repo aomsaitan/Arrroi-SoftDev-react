@@ -1,0 +1,56 @@
+div.shop {
+    margin-left: 4%;
+    margin-bottom: 4%;
+    border: 2px solid #EBC27C;
+    float: left;
+    width: 20%;
+    border-radius: 0.5%;
+}
+
+.shop:hover {
+    border: 2px solid #814A2C;
+    box-shadow: 10px 10px 20px #707070;
+}
+
+.cover {
+    width: 98%;
+    height: 20vw;
+}
+
+div.shop img {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    object-fit: cover;
+}
+
+div.box {
+    font-size: 2vw;
+    padding: 1%;
+    text-align: center;
+    background-color: #EBC27C;
+}
+
+div.des {
+    font-size: 1.2vw;
+    padding: 2%;
+}
+
+.county {
+    text-align: right;
+    color: rgb(109, 103, 103);
+}
+
+div.des p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75ch;
+}
+
+span {
+    content: "\2606";
+    content: "\2605";
+    content: "\2661";
+    font-size: 3vh;
+}

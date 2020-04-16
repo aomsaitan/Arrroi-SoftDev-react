@@ -1,27 +1,36 @@
 import React, { Component } from 'react'
 import firebase from './firebase'
 
-var storage = firebase.storage()
-var storageRef = storage.ref()
+var storage = firebase.storage().ref()
+var storageRef
 
 function GetImage(HocComponent) {
     return class extends Component {
         constructor(props) {
             super(props);
-            const { nameImg } = this.props;
-            if( nameImg ){
-                this.getImageFood(nameImg)
+            const { nameFood } = this.props;
+            if (nameFood) {
+                this.getImageFood(nameFood)
             }
-            
+            const { nameIcon } = this.props;
+            if (nameIcon) {
+                this.getImageIcon(nameIcon)
+            }
         }
-        getImageFood(image){
-            storageRef.child(`Food/${image}.jpg`).getDownloadURL().then(function (url) {
-                var store1 = document.getElementById(image)
-                store1.src = url
+        getImageFood(image) {
+            storage.child(`Food/${image}.jpg`).getDownloadURL().then(function (url) {
+                storageRef = document.getElementById(image)
+                storageRef.src = url
             }).catch(function (error) { })
         };
-        render(){
-            return <HocComponent {...this.props}/>
+        getImageIcon(image) {
+            storage.child(`Icon/${image}.png`).getDownloadURL().then(function (url) {
+                storageRef = document.getElementById(image)
+                storageRef.src = url
+            }).catch(function (error) { })
+        };
+        render() {
+            return <HocComponent {...this.props} />
         }
     }
 }
