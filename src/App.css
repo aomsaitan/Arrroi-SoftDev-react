@@ -1,38 +1,110 @@
-.App {
+@font-face {
+  font-family: Manrope;
+  src: url(./font/manrope.woff);
+}
+@font-face {
+  font-family: Supermarket;
+  src: url(./font/supermarket.woff);
+}
+.textS {
+  font-family: Supermarket,Helvetica, Arial, sans-serif;
+}
+.textM {
+  font-family: Manrope, Helvetica, Arial, sans-serif;
+}
+.textSe{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+}
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.border{
+  border: 1px solid;
+}
+h1{
+  font-size: 4vw;
+  font-weight: lighter;
   text-align: center;
+  padding: 1%;
+}
+/*shop*/
+div.shop{
+  /* margin: auto; */
+  margin-left: 4%;
+  margin-bottom: 4%;
+  border: 2px solid #EBC27C;
+  float: left;
+  width: 20%;
+  /* height: 50vh; */
+  border-radius: 0.5%;
+}
+.shop:hover {
+  border: 2px solid #814A2C;
+  box-shadow: 10px 10px 20px #707070;
+}
+.cover{
+  width: 98%;
+  height: 20vw;
+}
+div.shop img {
+  width: 100%;
+  height: 100%;
+  margin: 1%;
+  object-fit: cover;
+}
+div.box{  
+  font-size: 2vw;
+  padding: 1%;
+  text-align: center;
+  background-color: #EBC27C;
+  /* margin-left: 32% ; */
+}
+div.des{  
+  font-size: 1.2vw;
+  padding: 2%;
+}
+.county{
+  text-align: right;
+  color: rgb(109, 103, 103);
+}
+div.des p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75ch;
+}
+span {
+  content: "\2606";
+  content: "\2605";
+  content: "\2661";
+  font-size: 3vh;
+}
+/* Menu */
+.menu{
+  font-size: 2.5vw; 
+}
+.menu img{
+  width: 4%;
+  float: left;
+}
+.desOut{
+  margin-left: 10%;
+}
+.desOut p{
+  margin-left: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
