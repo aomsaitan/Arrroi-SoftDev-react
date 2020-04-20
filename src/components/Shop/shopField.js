@@ -10,15 +10,15 @@ class ShopField extends Component {
                 </a>
                 <div class="des textS">
                     <p>{this.props.des}</p>
-                    {this.props.star === 5
+                    {parseInt(this.props.star) === 5
                         ? <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        : this.props.star === 4
+                        : parseInt(this.props.star) === 4
                             ? <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                            : this.props.star === 3
+                            : parseInt(this.props.star) === 3
                                 ? <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-                                : this.props.star === 2
+                                : parseInt(this.props.star) === 2
                                     ? <span>&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-                                    : this.props.star === 1
+                                    : parseInt(this.props.star) === 1
                                         ? <span>&#9733;&#9734;&#9734;&#9734;&#9734;</span>
                                         : <span>&#9734;&#9734;&#9734;&#9734;&#9734;</span>}
                     <p class="county">{this.props.county}</p>

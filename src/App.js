@@ -7,8 +7,8 @@ import 'firebase/storage';
 function App() {
   return (
     <div>
-      <Shop nameCover = "ร้านขายเนื้อ"/> 
-      {/*<Menu />*/}
+      <Shop /> 
+      {/* <Menu nameFood = "เนื้อผัดน้ำมันหอย"/> */}
     </div>
   )
 

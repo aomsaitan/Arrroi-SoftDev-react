@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 import './Menu.css';
 import MenuField from './MenuField';
 import HowTo from './Howto';
+import GetImage from '../GetImage';
 
 class Menu extends Component {
     render() {
         return (
-            <body>
+            <body >
+                <img class="BG" id={this.props.nameFood}/>
                 <h1 class="textS">เนื้อผัดน้ำมันหอย</h1>
 
                 <div class="menu textS">
@@ -62,4 +64,4 @@ class Menu extends Component {
         )
     }
 }
-export default Menu         	                
+export default GetImage(Menu)         	                
