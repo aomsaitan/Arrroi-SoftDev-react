@@ -1,28 +1,30 @@
 .menu {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 
 .menu img {
-    width: 4%;
+    width: 3vw;
     float: left;
 }
 
 .desOutbox {
-    margin-left: 10%;
+    margin: 0% 0% 1% 15%;
 }
 
 .desOutbox p {
-    margin-left: 7%;
+    margin-left: 6%;
 }
 
 .desInbox {
-    width: 80%;
+    opacity: 0.95;
+    background-repeat: no-repeat;
+    width: 50%;
     background-color: #814A2C;
     color: aliceblue;
     margin-left: calc(25% - 1vw);
     margin-right: calc(25% - 1vw);    
-    border-radius: 20px;    
-    margin: 2% 10% 2% 10%;
+    border-radius: 15px;    
+    margin: 1% 25% 1% 25%;
   
 }
 .row-flex {
@@ -37,24 +39,14 @@
     overflow: hidden;
 }
 div.desInbox{
-    padding: 1% 0% 1% 5%;
+    padding: 1% 0% 1% 1%;
     
 }
-/* .desInboxL {
-    padding: 1% 0% 1% 5%;
-    width: 70%;
-}
-
-.desInboxR {
-    padding: 1% 0% 1% 0%;
-    width: 30%;
-} */
-
 .HowTo {
-    width: 80%;
+    width: 70%;
     background-color: #4A362B;
-    border-radius: 20px;
-    margin: 2% 10% 2% 10%;
+    border-radius: 15px;
+    margin: 1% 15% 1% 15%;
     padding-top: 2%;
 }
 
@@ -65,7 +57,7 @@ div.desInbox{
 
 .Step {
     background-color: #EBC27C;
-    width: 10%;
+    width: 8%;
     padding: 0.5% 1% 0.5% 3.5%;
     border-radius: 5px;
     box-shadow: -5px 0px 0px #EBC27C;
