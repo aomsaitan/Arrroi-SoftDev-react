@@ -3,8 +3,10 @@ import './Menu.css';
 import MenuField from './MenuField';
 import HowTo from './Howto';
 import GetImage from '../GetImage';
+import Ingredients from './Ingredients'
 
 class Menu extends Component {
+    
     render() {
         return (
             <body >
@@ -21,31 +23,35 @@ class Menu extends Component {
                         des="ส่วนผสม"
                     ></MenuField>
 
-                    <div class="desInbox">
-                        <div class="desInboxL">
-                            เนื้อสันในวัวหั่นชิ้นบางขนาดพอคำ<br></br>
-                            ซอสหอยนางรม<br></br>
-                            ซอสปรุงอาหารตราแม็กกี้ สูตรผัดกลมกล่อม<br></br>
-                            หอมหัวใหญ่<br></br>
-                            ต้นกระเทียมหั่นเป็นท่อน<br></br>
-                            พริกชี้ฟ้าแดงหั่นแฉลบ<br></br>
-                            ซีอิ๊วดำ<br></br>
-                            กระเทียมสับหยาบ<br></br>
-                            พริกไทยป่น<br></br>
-                            น้ำตาลทราย<br></br>
-                        </div>
-                        <div class="desInboxR">
-                            300 กรัม<br></br>
-                            2 ช้อนชา<br></br>
-                            1 ช้อนชา<br></br>
-                            1 หัว (150 กรัม)<br></br>
-                            5 ต้น (200 กรัม)<br></br>
-                            3 เม็ด<br></br>
-                            1 ช้อนชา<br></br>
-                            1 ช้อนโต๊ะ<br></br>
-                            1/2 ช้อนชา<br></br>
-                            1/2 ช้อนชา<br></br>
-                        </div>
+                    <div class="desInbox column-flex">
+                        <Ingredients
+                        Ingredients = "เนื้อสันในวัวหั่นชิ้นบางขนาดพอคำ"
+                        quantity = "300 กรัม"
+                        ></Ingredients>
+                        <Ingredients
+                        Ingredients = "ซอสหอยนางรม"
+                        quantity = "2 ช้อนชา"
+                        ></Ingredients>
+                        <Ingredients
+                        Ingredients = "ซอสปรุงอาหารตราแม็กกี้ สูตรผัดกลมกล่อม"
+                        quantity = "1 ช้อนชา"
+                        ></Ingredients>
+                        <Ingredients
+                        Ingredients = " หอมหัวใหญ่"
+                        quantity = " 1 หัว (150 กรัม)"
+                        ></Ingredients>
+                        <Ingredients
+                        Ingredients = "ต้นกระเทียมหั่นเป็นท่อน"
+                        quantity = " 5 ต้น (200 กรัม)"
+                        ></Ingredients>
+                        <Ingredients
+                        Ingredients = "เนื้อสันในวัวหั่นชิ้นบางขนาดพอคำ"
+                        quantity = "300 กรัม"
+                        ></Ingredients>
+                        <Ingredients
+                        Ingredients = "เนื้อสันในวัวหั่นชิ้นบางขนาดพอคำ"
+                        quantity = "300 กรัม"
+                        ></Ingredients>
                     </div>
                     <MenuField
                         nameIcon="mix"
