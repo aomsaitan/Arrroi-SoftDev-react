@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 import firebase from './firebase'
 
 var storage = firebase.storage().ref()
-var storageRef
-
 function GetImage(HocComponent) {
     return class extends Component {
         constructor(props) {
             super(props);
+            const { id }  = this.props;
             const { nameFood } = this.props;
             if (nameFood) {
                 this.getImageFood(nameFood)
             }
             const { nameIcon } = this.props;
+            
             if (nameIcon) {
-                this.getImageIcon(nameIcon)
+                this.getImageIcon(nameIcon,id)
             }
             // const { nameCover } = this.props;
             // if(nameCover){
@@ -35,15 +35,23 @@ function GetImage(HocComponent) {
         // }
         getImageFood(image) {
             storage.child(`Food/${image}.jpg`).getDownloadURL().then(function (url) {
-                storageRef = document.getElementById(image)
+                const storageRef = document.getElementById(image)
                 storageRef.src = url
             }).catch(function (error) { })
         };
-        getImageIcon(image) {
+        getImageIcon(image,id) {
             storage.child(`Icon/${image}.png`).getDownloadURL().then(function (url) {
-                storageRef = document.getElementById(image)
-                storageRef.src = url
-            }).catch(function (error) { })
+                if(id){ 
+                    const storageRef = document.getElementById(id)
+                    storageRef.src = url
+                }else{
+                    const storageRef = document.getElementById(image)
+                    storageRef.src = url
+                }
+                
+            }).catch(function (error) { 
+                console.log(error)
+            })
         };
         render() {
             return <HocComponent {...this.props} />
