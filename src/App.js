@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       {/* <Shop />  */}
-      <Menu nameFood = "เนื้อผัดน้ำมันหอย"/>
-      {/* <Notification/> */}
+      {/* <Menu nameFood = "เนื้อผัดน้ำมันหอย"/> */}
+      <Notification/>
     
     </div>
   )

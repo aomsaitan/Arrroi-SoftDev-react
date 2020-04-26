@@ -2,8 +2,26 @@
     font-size: 2.5vw;
     background-color: #814A2C;
     display: flex;
-    border-radius: 20px;
-    width: 80%;
-    margin: 2% 10% 2% 10%;
+    /* border-radius: 15px; */
+    width: 60%;
+    margin: 2% 20% 2% 20%;
     color: aliceblue;
+    padding: 1%;
 }
+/* div{
+    float: top;
+} */
+.Notification img{
+    width: 4%;
+    height: 2.5vw;
+    margin: 0.9% 1% 0% 8%;
+    
+}
+h2{
+    font-size: 2vw;
+    font-weight: lighter;
+}
+/* p{
+    font-size: 1vw;
+    color: #DADADA;
+} */
