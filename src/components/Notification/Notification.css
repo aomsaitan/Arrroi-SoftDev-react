@@ -4,13 +4,10 @@
     display: flex;
     border-radius: 5px;
     width: 60%;
-    margin: 2% 20% 2% 20%;
+    margin: 0.5% 20% 0% 20%;
     color: aliceblue;
     padding: 1%;
 }
-/* div{
-    float: top;
-} */
 .Notification img{
     width: 4%;
     height: 2.5vw;

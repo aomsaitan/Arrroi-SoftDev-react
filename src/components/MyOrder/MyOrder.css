@@ -1,27 +1,42 @@
-.MyOrder{
+.MyOrder {
     background-color: #EBC27C;
     padding: 0.5%;
     width: 10%;
     font-size: 1.5vw;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 15%;
     border-radius: 5px;
 }
-.MyOrderField1{
-    background-color: #814A2C;
-    width: 70%;
-    padding: 1.5%;
-    font-size: 1.5vw;
-    color: white;
-    margin: 1% 15% 0% 15%;
+
+.MyOrderField {
+    background-color: #4A362B;
+    width: 60%;
+    padding: 0.5% 0% 1% 2%;
+    margin: 1% 20% 0% 20%;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
 }
-.MyOrderField2{
-    background-color: #EBC27C;
-    width: 70%;
-    padding: 1.5%;
-    font-size: 1.5vw;
+
+.MyOrderField img {
+    width: 2.8%;
+    height: 1.5vw;
+}
+
+.column p {
+    padding-left: 2%;
+    font-size: 1.1vw;
     color: white;
-    margin: 1% 15% 0% 15%;
-    border-radius: 5px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
 }

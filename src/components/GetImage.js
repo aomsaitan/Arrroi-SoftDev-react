@@ -6,7 +6,6 @@ function GetImage(HocComponent) {
     return class extends Component {
         constructor(props) {
             super(props);
-            const { id }  = this.props;
             const { nameFood } = this.props;
             if (nameFood) {
                 this.getImageFood(nameFood)
@@ -14,7 +13,7 @@ function GetImage(HocComponent) {
             const { nameIcon } = this.props;
             
             if (nameIcon) {
-                this.getImageIcon(nameIcon,id)
+                this.getImageIcon(nameIcon)
             }           
         }
         
@@ -24,15 +23,10 @@ function GetImage(HocComponent) {
                 storageRef.src = url
             }).catch(function (error) { })
         };
-        getImageIcon(image,id) {
+        getImageIcon(image) {
             storage.child(`Icon/${image}.png`).getDownloadURL().then(function (url) {
-                if(id){ 
-                    const storageRef = document.getElementById(id)
-                    storageRef.src = url
-                }else{
                     const storageRef = document.getElementById(image)
-                    storageRef.src = url
-                }
+                    storageRef.src = url           
                 
             }).catch(function (error) { 
                 console.log(error)
