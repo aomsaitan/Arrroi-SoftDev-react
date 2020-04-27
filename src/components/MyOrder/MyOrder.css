@@ -1,0 +1,27 @@
+.MyOrder{
+    background-color: #EBC27C;
+    padding: 0.5%;
+    width: 10%;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+.MyOrderField1{
+    background-color: #814A2C;
+    width: 70%;
+    padding: 1.5%;
+    font-size: 1.5vw;
+    color: white;
+    margin: 1% 15% 0% 15%;
+    border-radius: 5px;
+}
+.MyOrderField2{
+    background-color: #EBC27C;
+    width: 70%;
+    padding: 1.5%;
+    font-size: 1.5vw;
+    color: white;
+    margin: 1% 15% 0% 15%;
+    border-radius: 5px;
+}
