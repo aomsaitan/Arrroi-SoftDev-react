@@ -20,7 +20,7 @@ class OrderDetail extends Component {
                 // date = "27/4/2020"
                 // time = "2:54 AM"
                 ></MySalesField>
-                <p style={{ marginLeft: "18%", fontSize: "2.5vw", marginBottom: "1%" }}>รายการสินค้า</p>
+                <p style={{ marginLeft: "18%", fontSize: "2.5vw", marginBottom: "1%" }}>รายการสินค้าที่สั่งซื้อ</p>
                 <div >
                     <OrderDetailField
                         nameFood="เนื้อสันในวัว"
@@ -96,9 +96,9 @@ class OrderDetail extends Component {
                     กรุณาเลือกวิธีชำระเงิน
 				</div>
                 <div className="payment">
-                    <PaymentField
+                    <PaymentField                    
                         nameIcon = "ไทยพาณิชย์"
-                        bank = "ธนาคารไทยพาณิชย์"
+                        bank = "ธนาคารไทยพาณิชย์"                       
                     ></PaymentField>
                     <PaymentField
                         nameIcon = "ธนาคารกรุงเทพ"

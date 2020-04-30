@@ -43,3 +43,11 @@
     color: #DADADA;
     font-size: 1vw;
 }
+button.MySales {
+    width: 20%;
+    color: white;
+    border-radius: 8px;
+    background-color: #4a362b;
+    margin: 1% 0% 2% 40%;
+    font-size: 1.5vw;
+}
