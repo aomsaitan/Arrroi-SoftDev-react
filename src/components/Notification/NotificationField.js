@@ -13,7 +13,7 @@ class NotificationField extends Component {
                 <div>
                     <h2> {this.props.HeadNoti}</h2>
                     <p>{this.props.des}</p>
-                    <p>{this.props.date}</p>
+                    <p>{this.props.time} {this.props.date}</p>
                 </div>
             </div>
         )

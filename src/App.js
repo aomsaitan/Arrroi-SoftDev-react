@@ -4,15 +4,17 @@ import Shop from './components/Shop/shop';
 import Menu from './components/Menu/Menu';
 import Notification from './components/Notification/Notification'
 import 'firebase/storage';
-import MyOrder from './components/MyOrder/MyOrder';
+import MySales from './components/MySales/MySales';
+import OrderDetail from './components/OrderDetail/OrderDetail'
 
 function App() {
   return (
     <div>
       {/* <Shop />  */}
       {/* <Menu nameFood = "เนื้อผัดน้ำมันหอย"/> */}
-      <Notification/>
-    {/* <MyOrder/> */}
+      {/* <Notification/> */}
+      {/* <MySales/> */}
+      <OrderDetail/>
     </div>
   )
 

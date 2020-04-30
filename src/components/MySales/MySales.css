@@ -1,6 +1,5 @@
-.MyOrder {
+.MySales {
     background-color: #EBC27C;
-    padding: 0.5%;
     width: 10%;
     font-size: 1.5vw;
     text-align: center;
@@ -8,35 +7,39 @@
     border-radius: 5px;
 }
 
-.MyOrderField {
-    background-color: #4A362B;
+.MySalesField {
     width: 60%;
-    padding: 0.5% 0% 1% 2%;
     margin: 1% 20% 0% 20%;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
 }
 
-.MyOrderField img {
+.MySalesField img {
     width: 2.8%;
     height: 1.5vw;
 }
 
-.column p {
+.column-flex p {
     padding-left: 2%;
     font-size: 1.1vw;
     color: white;
 }
 
-.column {
+.column-flex {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    overflow: hidden;
+ 
 }
 
-.row {
+.row-flex {
     display: flex;
     flex-direction: row;
-    margin-top: 1%;
+}
+
+.TimeAndDate {
+    margin-top: 13%;
+    color: #DADADA;
+    font-size: 1vw;
 }

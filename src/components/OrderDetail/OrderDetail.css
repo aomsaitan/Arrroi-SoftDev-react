@@ -1,0 +1,140 @@
+.cover {
+    width: 12%;
+    height: 6vw;
+    background-color: white;
+    border: 1px solid white;
+    margin: 1%;
+}
+
+.OrderList {
+    background-color: #EBC27C;
+    width: 60%;
+    margin: 0.05% 20% 0% 20%;
+    /* padding: 1% 0% 1% 1%; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.OrderList img {
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    object-fit: contain;
+}
+
+.OrderList p {
+    margin: 5.5% 0% 0% 5%;
+    font-size: 1.5vw;
+    /* border: 2px solid yellow; */
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 15ch;
+    white-space: nowrap;
+}
+
+.box {
+    width: 20%;
+    background-color: violet;
+    margin: 1%;
+}
+
+/*/////////////////////// เลือกการชำระเงิน ///////////////////*/
+
+.payment {
+    width: 80%;
+    height: 5vw;
+    margin-left: 10%;
+    border: 10 px solid black;
+}
+
+.container {
+    display: flax;
+    position: relative;
+    padding-left: 20%;
+    margin-left: 10%;
+    cursor: pointer;
+    color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3.2vw;
+    width: 100%;
+    padding: 2%;
+    background-color: #eee;
+    border: 1px solid #ccc
+}
+
+.checkmark img {
+    width: 20%;
+    height: 3.2vw;
+    /* border: black 1px solid; */
+}
+
+.checkmark p {
+    padding: 1.5% 0% 0% 5%;
+    /* border: black 1px solid; */
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+    border: 1px solid #4A362B;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #ccc;
+    border: 1px solid #4A362B;
+    box-shadow: 2px 2px 1px #707070;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: inline;
+}
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    padding: 1% 0% 0% 85%;
+    content: "\2713";
+
+    
+}
+button.Order {
+    width: 10vw;
+    color: white;
+    border-radius: 8px;
+    background-color: #4a362b;
+    margin: 0px 1.5vw 5% 1.5vw;
+    font-size: 2vw;
+}
