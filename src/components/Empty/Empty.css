@@ -1,0 +1,29 @@
+/*//////////Nim Code ///////////////*/
+.emptyCart{
+    font-size: 2vw;
+  }
+  .BGEmptyCart{
+    width: 100%;;
+    position: fixed;
+    z-index: -10;
+    opacity: 0.1;   
+  }
+  .letShop{
+    margin-top: 8%;
+  }
+  .letShopT{
+    font-size: 3vw;
+  }
+  
+  .aloneCart{
+    width: 15vw;   
+  }
+  button.letShopB {
+    width: 10vw;
+    color: white;
+    border-radius: 8px;
+    background-color: #814A2C;
+    margin: 0px 1.5vw 0px 1.5vw;
+    font-size: 2vw;
+    margin-top: 1vw;
+  }

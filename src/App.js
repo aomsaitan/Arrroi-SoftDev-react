@@ -7,6 +7,9 @@ import 'firebase/storage';
 import MySales from './components/MySales/MySales';
 import OrderDetail from './components/OrderDetail/OrderDetail'
 import MySalesDetail from './components/MySales/MySalesDetail'
+import EmptyCart from './components/Empty/EmptyCart'
+import EmptyOrder from './components/Empty/EmptyOrder'
+import MyShop from './components/MyShop/MyShop'
 function App() {
   return (
     <div>
@@ -15,7 +18,10 @@ function App() {
       {/* <Notification/> */}
       {/* <MySales/> */}
       {/* <OrderDetail/> */}
-      <MySalesDetail/>
+      {/* <MySalesDetail/> */}
+      {/* <EmptyCart/> */}
+      {/* <EmptyOrder/> */}
+      <MyShop />
     </div>
   )
 
